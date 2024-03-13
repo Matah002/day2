@@ -454,6 +454,8 @@ print(x)
 # A program to compute the value of an investment 
 # carried 10 years into the future
 
+"""
+
 def main():
     print("This program calcalutes the future value")
     print("of a 10-year investment.")
@@ -467,6 +469,117 @@ def main():
     print("The value in 10 years is:", principal)
 
 main()
+
+"""
+
+for i in range(5):
+    print(i * i)
+
+print("start")
+for i in range(0):
+    print("Hello")
+print("end")
+
+# A program that computes the real roots of a quadratic equation. 
+# Illustrates use of the math library. 
+# Note: This program crashes if the equation has no real roots.
+
+"""
+
+import math
+def main():
+    print("This program finds the real solution to aquadratic")
+
+    a = float(input("Enter coefficient a: "))
+    b = float(input("Enter coefficient b: "))
+    c = float(input("Enter coefficient c: "))
+
+    discRoot = math.sqrt(b * b - 4 * a * c)
+    root1 = (-b + discRoot) / (2 * a)
+    root2 = (-b - discRoot) / (2 * a)
+
+    print()
+    print("The solutions are:", root1,root2)
+
+main()
+
+"""
+fact = 1
+for factor in [6,5,4,3,2,1]:
+    fact = fact * factor
+
+"""
+def main():
+    n = int(input("Please enter a whole number"))
+    fact = 1
+    for factor in range(n,1,-1):
+        fact = fact * factor
+    print("The factorial of", n, "is", fact)
+
+main()   
+
+"""
+
+# Simple string processing program to generate usernames .
+
+"""
+def main():
+    print("This program generates computer usernames. \n")
+
+    first = input("Please enter your first name (all lowercase)")
+    last  = input("Please enter your last name (all lowercase)")
+
+    uname = first[0] + last[:7]
+
+    print("Your username is:", uname)
+ 
+main()
+
+"""
+# A program to print the month abbreviation, given its number .
+
+"""
+def main() : 
+
+# months is a list used as a lookup table 
+    
+    months = ["Jan" , "Feb" , "Mar" , "Apr" , "May" , "Jun" , 
+    "Jul " , "Aug" , "Sep" , "Oct " , "Nov" , "Dec "] 
+    n = int (input ( "Enter a month number ( 1-12) : ")) 
+    print ( "The month abbreviation is" , months [n-1] + " . ") 
+
+main()
+
+"""
+
+s = "hello, I came here for an argument " 
+s.lower () 
+print(s)
+
+s1 = "hello, I came here for an argument " 
+s1.center(50) 
+print(s1)
+
+s2 = "hello, I came here for an argument " 
+s2.lower () 
+print(s2)
+
+s3 = "hello, I came here for an argument " 
+s3.upper() 
+print(s3)
+
+squares = []
+for x in range(1,101):
+    squares.append(x*x)
+
+print(squares)
+
+
+
+
+
+
+
 
 
 
