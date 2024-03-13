@@ -231,21 +231,242 @@ def add_nums(a, b):
 total = add_nums(2, 13)
 print(total)
 
-def calculate_discount(price, discount_percent):
-    if discount_percent >= 20:
-        final_price = price - (price * discount_percent / 100)
-        return final_price
+def outer_fun(a, b):
+    def inner_fun(c, d):
+        return c + d
+    return inner_fun(a, b)
+
+res = outer_fun(5, 10)
+print(res)
+
+def display(**kwargs):
+    for i in kwargs:
+        print(i)
+
+display(emp="Kelly", salary=9000)
+
+def add(a, b):
+    return a+5, b+5
+
+result = add(3, 2)
+print(result)
+
+for num in range(1, 5):
+    print(num)
+
+
+def some_thing(number1, number2):
+    first_value = number1 + 8
+    second_value = number2 - 5
+    return first_value
+
+print(some_thing(13, 10))
+
+
+z = lambda x : x * x
+
+print(z(6))
+
+def greet():
+    print("Hello")
+
+greet()
+
+def greet_two(greeting):
+    print(greeting)
+
+greet_two("Howdy")
+
+def greet_two(greeting):
+    print(greeting)
+
+greet_two("Hi how are you doing?")
+
+def greet_two(greeting = "Alamsiki"):
+    print(greeting)
+
+greet_two()
+
+def many_types(x):
+    if x < 0:
+        return "Hello!"
     else:
-        return price
+        return 0
+    
+print(many_types(1))
+print(many_types(-1))
+print(many_types(-100))
 
 
+# Defining a function with an arbitrary number of
+#arguments
+
+#Defining a function capable of taking an arbitrary number of arguments can be done by prefixing 
+#one of thearguments with a *
+
+def func(*args):
+    # args will be a tuple containing all values that are passed in
+    for i in args:
+        print(i)
+
+func(1, 2, 3)
+
+list_of_arg_values = [1, 2, 3]
+func(*list_of_arg_values)
+func()
+
+def func(**kwargs):
+   # kwargs will be a dictionary containing the names as keys and the values as values
+    for name, value in kwargs.items():
+        print(name, value)
+
+func(value1 = 1, value2 = 2, value3 = 3)
+func()
 
 
+my_dict = {"foo" : 1, "bar" : 2}
+func(**my_dict)
+func()
+
+greet_me = lambda: "Hello"
+print(greet_me())
+
+greeting = lambda x, *args, **kwargs: print(x, args, kwargs)
+greeting("hello", "world", world="world")
+
+def num_square(num):
+    return num ** 2
+print(num_square(8))
+
+num_square = lambda num: num ** 2
+print(num_square(9))
+
+"""
+def ispalindrome(string):
+    if (string == string[::-1]):
+        return "A Palindrome."
+    else:
+        return "Not a Palindrome."
+    
+string = input("Enter string:")
+
+print(ispalindrome(string))
+
+"""
+class Person:
+
+# name & age parameters passed in constructor
+
+    def __init__(self, name, age): 
+
+        self.name = name
+
+        self.age = age
+
+P1 = Person("Mutemi",65)
+print(P1.name)
+print(P1.age)
+
+"""
+print("This program illustrates a chaotic function")
+x = eval(input("Enter a number between 0 and 1"))
+for i in range(10):
+    x = 3.9 * x * (1 - x)
+    print(x)
+
+    """
 
 
+"""
+Susan is spending a year studying in Germany. She has no problems with 
+language, as she is fluent in many languages (including Python). Her problem 
+is that she has a hard time figuring out the temperature in the morning so that 
+she knows how to dress for the day. Susan listens to the weather report each
+morning, but the temperatures are given in degrees Celsius, and she is used to 
+Fahrenheit. 
+Fortunately, Susan has an idea to solve the problem. Being a computer science major, she never goes anywhere without her laptop computer. She thinks 
+it might be possible that a computer program could help her out. 
+Susan begins with an analysis of her problem. In this case, the problem is 
+pretty clear: the radio announcer gives temperatures in degrees Celsius, but 
+Susan only comprehends temperatures that are in degrees Fahrenheit.
+
+"""
+
+"""
+def main () : 
+
+    celsius = eval (input ("What is the Celsius temperature? ") ) 
+    fahrenheit = 9/5 * celsius + 32 
+    print ("The temperature is", fahrenheit, "degrees Fahrenheit.") 
+
+main () 
+
+"""
+
+import datetime
+dt = datetime.datetime.strptime("2016-04-15T08:27:18-0500", "%Y-%m-%dT%H:%M:%S%z")
+print(dt)
+
+print(3 + 4)
+
+print("The answer is", end= " ")
+print(3 + 5)
+
+"""
+
+ans = eval(input("Enter an expression: "))
+print(ans)
+
+"""
+
+# A simple program to average two exam scores 
+# Illustrates use of multiple input 
 
 
+"""
+def main():
+    print("This program computes the average of two exam scores.")
 
+    score1, score2 = eval(input("Enter two scores separated by a comma:"))
+    average = (score1 + score2) / 2
+
+    print("The average of the scores is:", average)
+
+main()
+
+"""
+
+for i in range(10):
+    print(i)
+
+for i in [0, 1, 2, 3]:
+    print(i)
+
+for odd in [1, 3, 5, 7, 9]:
+    print(odd * odd)
+
+for i in range(10):
+    print(odd)
+
+x = list(range(10))
+print(x)
+
+# A program to compute the value of an investment 
+# carried 10 years into the future
+
+def main():
+    print("This program calcalutes the future value")
+    print("of a 10-year investment.")
+
+    principal = eval(input("Enter the initial principal:"))
+    apr = eval(input("Enter the annual interst rate:"))
+
+    for i in range(10):
+        principal = principal * (1 + apr)
+
+    print("The value in 10 years is:", principal)
+
+main()
 
 
 
