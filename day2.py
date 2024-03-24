@@ -574,6 +574,126 @@ for x in range(1,101):
 
 print(squares)
 
+# Converts a date in form "mm./dd/yyyy" to "month day , year"
+
+"""
+def main():
+    # get the date
+    dateStr = input("Enter a date (mm/dd/yyyy: )")
+
+    # split into components
+    monthStr, dayStr, yearStr = dateStr.split("/")
+
+    # convert monthStr to the month name
+    months = ["January", "February", "March" , "April",
+              "May", "June", "July", "Augusut",
+              "September", "October", "November", "December"]
+    
+    monthStr = months[int(monthStr)-1]
+
+    # output result in month day, year format
+    print("The converted date is:", monthStr, dayStr + ",", yearStr)
+
+main()
+
+ """    
+print ( "Hello\nWorld\n\nGoodbye 32\n")
+
+
+"""
+def main():
+    fname = input("Enter file name:")
+    infile = open(fname,"r")
+    data = infile.read()
+    print(data)
+
+main()
+
+"""
+
+def happy():
+    print("Happy birthday to you!")
+
+happy()
+
+"""
+def singFred():
+    happy()
+    happy()
+    print("Happy birthday, dear Fred")
+    happy()
+
+singFred()
+
+"""
+
+def happy():
+    print("Happy birthday to you!")
+
+happy()
+
+def singFred():
+    happy()
+    happy()
+    print("Happy birthday, dear Fred")
+    happy()
+
+singFred()
+
+def singLucy():
+    happy()
+    happy()
+    print("Happy birthday, dear Lucy")
+    happy()
+
+def main():
+    singFred()
+    print()
+    singLucy()
+
+main()
+
+def happie():
+    print("Happy birthday to you!")
+
+happie()
+
+def sing(person):
+    happie()
+    happie()
+    print("Happy Bithday, dear", person)
+    happie()
+
+sing("James")
+sing("Joshuu")
+sing("Fee")
+
+def main(a, b):
+    print(a + b)
+    
+main(10,12)
+
+print()
+
+"""
+def main():
+    x1, x2, x3 = eval(input("Please enter three values: "))
+
+    print("The largest value is:", max(x1, x2, x3))
+
+main()
+
+"""
+
+def main():
+    n = int(input("How many numbers do you have? "))
+    total = 0.0
+    for i in range(n):
+        x = float(input("Enter a number >> "))
+        total = total + x
+        print("\nThe average of the numbers is", total/n)
+
+main()
 
 
 
