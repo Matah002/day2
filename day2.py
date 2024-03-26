@@ -685,6 +685,7 @@ main()
 
 """
 
+"""
 def main():
     n = int(input("How many numbers do you have? "))
     total = 0.0
@@ -695,9 +696,66 @@ def main():
 
 main()
 
+"""
 
+i = 0
+while i <= 10:
+    print(i)
+    i = i + 1
 
+print()
 
+for i in range(11):
+    print(i)
+
+"""
+def main():
+    n = int(input("How many numbers do you have? "))
+    total = 0.0
+    for i in range(n):
+        x = float(input("Enter a number >> "))
+        total = total + x
+        print("\nThe average of the numbers is", total/n)
+
+main()
+
+"""
+i = 0
+while i <= 10:
+    print(i)
+    i+=1
+
+"""
+while True:
+    number = float(input("Enter a positive number: "))
+    if number >= 0: break
+
+"""
+
+"""
+while True:
+    number = float(input("Enter a positive number: "))
+    if number >= 0: 
+        break
+
+    else:
+        print("The number you entered was not positive")
+
+"""
+
+"""
+ans = input("What flavor do you want [vanilla]: ")
+if ans:
+    flavor = ans
+else:
+    flavor = "Vanilla"
+
+    """
+
+ans = input("What flavor do you want [vanilla]: "  ) 
+flavor = ans or "Vanilla"
+
+print(flavor)
 
 
 
