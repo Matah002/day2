@@ -752,12 +752,19 @@ else:
 
     """
 
+"""
 ans = input("What flavor do you want [vanilla]: "  ) 
 flavor = ans or "Vanilla"
 
 print(flavor)
 
+"""
 
+f = open("C:\Users\ASUS\Downloads\Oney", "r")
+file_contents = f.read()
+f.close()
+
+print(type(file_contents))
 
 
 
