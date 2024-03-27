@@ -21,8 +21,6 @@ for day in days_of_week:
     print()
 
 
-f = open("main.txt", "r")
-print(f.read())
 
 
 
