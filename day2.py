@@ -759,12 +759,23 @@ flavor = ans or "Vanilla"
 print(flavor)
 
 """
+def add(a, b):
+    result = a + b
+    print(f"The result is {result}")
+    return result
 
-f = open("C:\Users\ASUS\Downloads\Oney", "r")
-file_contents = f.read()
-f.close()
+result = add(2, 3)
+print(f"The final result is {result}")
 
-print(type(file_contents))
+
+def main(x, y):
+    i = x + y
+    print("The result is: ", i)
+
+main(3, 4)
+
+
+
 
 
 

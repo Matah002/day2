@@ -1,8 +1,14 @@
-main.txt
-
 Name       Age
 James      19
 Josh       19
 Ian        20
 Doe        21
 Deph       22
+Steve      22
+Angie      18
+Fee        19
+Tito       11
+
+
+
+
